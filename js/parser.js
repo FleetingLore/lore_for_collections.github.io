@@ -54,6 +54,7 @@ export function into_tokens(input) {
     return { tokenList, indentList };
 }
 
+// 转义符
 export function trim_lines(tokenList) {
     for (const tokens of tokenList) {
         for (let i = 0; i < tokens.length; i++) {

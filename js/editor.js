@@ -28,7 +28,7 @@ function handleIndent(e) {
     const currentLine = text.substring(0, pos).split('\n').pop();
 
     let indent = currentLine.match(/^\s*/)[0];
-    if (currentLine.trim().startsWith('%')) {
+    if (currentLine.trim().startsWith('+')) {
         indent += '  ';
     }
 

@@ -9,27 +9,27 @@ function exportHTML() {
     const { tokenList, indentList } = into_tokens(editorContent);
     trim_lines(tokenList);
     const lineList = into_lines(tokenList);
-    const root = into_nodes("а╢╫су╬", indentList, lineList);
+    const root = into_nodes("root", indentList, lineList);
 
     let html = `<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${document.getElementById('filename').value || 'а╢╫су╬'}</title>
+    <title>${document.getElementById('filename').value || 'local'}</title>
     <style>
 :root {
-    --back_ground: #fffff7;
-    --text: #001e3b;
-    --local: #c6c0ff;
-    --shadow: #d7d9db;
-    --block: #7d7d7e;
+    --back_ground: #ffffff;
+    --text: #111111;
+    --local: #dddddd;
+    --shadow: #eeeeee;
+    --block: #cccccc;
 }
 body {
     background: var(--back_ground);
     color: var(--text);
     font-family: "Fira Sans", sans-serif;
-    padding: 20px;
+    padding: 17px;
 }
 details {
     background: var(--back_ground);
@@ -96,7 +96,7 @@ a:hover {
 </body>
 </html>`;
 
-    let filename = document.getElementById('filename').value.trim() || 'а╢╫су╬';
+    let filename = document.getElementById('filename').value.trim() || 'О©╫О©╫О©╫О©╫у╬';
     filename = filename.replace(/\.html$/g, '') + '.html';
 
     const blob = new Blob([html], { type: 'text/html' });
