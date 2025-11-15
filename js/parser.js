@@ -170,7 +170,7 @@ export function nodeToHTML(node, level = 0) {
         if (node.category.type === 'Category1') {
             title = node.category.name;
         } else if (node.category.type === 'Category2') {
-            title = `${node.category.name} = ${node.category.content}`;
+            title = `${node.category.name} = ${node.category.content}`; // 这是其实一个待修复的问题。哈哈哈
         } else {
             title = 'None';
         }
