@@ -1,0 +1,40 @@
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-family: "SimHei", sans-serif;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: var(--btn-radius);
+    background: var(--white);
+    transition: all 0.3s;
+    font-family: "SimHei", sans-serif;
+}
+
+.save-box {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: "SimHei", sans-serif;
+}
+
+#filename {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    font-family: "SimHei", sans-serif;
+}

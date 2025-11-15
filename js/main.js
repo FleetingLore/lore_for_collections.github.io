@@ -1,4 +1,3 @@
-// js/main.js
 import { setupEditor } from './editor.js';
 import { setupExporter } from './exporter.js';
 
