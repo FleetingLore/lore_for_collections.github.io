@@ -1,0 +1,91 @@
+:root {
+    --text: #003366;
+    --white: #ffffff;
+    --btn-radius: 6px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "SimHei", sans-serif;
+}
+
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-family: "SimHei", sans-serif;
+}
+
+#editor {
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: "SimHei", monospace;
+    white-space: pre;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: var(--btn-radius);
+    background: var(--white);
+    transition: all 0.3s;
+    font-family: "SimHei", sans-serif;
+}
+
+.save-box {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: "SimHei", sans-serif;
+}
+
+#filename {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    font-family: "SimHei", sans-serif;
+}
+
+summary {
+    list-style: none;
+    font-family: "SimHei", sans-serif;
+}
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    summary::before {
+        content: "+";
+        margin-right: 8px;
+        width: 15px;
+        display: inline-block;
+        font-family: "SimHei", sans-serif;
+    }
+
+details[open] > summary::before {
+    content: "-";
+}
+
+input, textarea {
+    font-family: "SimHei", sans-serif;
+}
