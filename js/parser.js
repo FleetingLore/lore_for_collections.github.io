@@ -58,7 +58,7 @@ export function into_tokens(input) {
 export function trim_lines(tokenList) {
     for (const tokens of tokenList) {
         for (let i = 0; i < tokens.length; i++) {
-            tokens[i] = tokens[i].replace(/\\_/g, ' ').replace(/\\\\/g, '\\');
+            tokens[i] = tokens[i].replace(/=_/g, ' ');
         }
     }
 }
