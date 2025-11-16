@@ -15,7 +15,6 @@
   backdrop-filter: blur(8px);
 }
 
-/* 保存区域 */
 .save-box {
   margin-left: auto;
   display: flex;
