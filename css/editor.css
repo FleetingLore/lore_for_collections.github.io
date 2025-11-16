@@ -1,0 +1,22 @@
+#editor {
+  width: 100%;
+  height: calc(100vh - var(--toolbar-height));
+  margin-top: var(--toolbar-height);
+  padding: var(--spacing-lg);
+  border: none;
+  outline: none;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: "SimHei", "Consolas", "Monaco", "Courier New", monospace;
+  background: var(--editor-bg);
+  resize: none;
+  white-space: pre;
+  overflow-wrap: normal;
+  overflow-x: auto;
+  tab-size: 4;
+}
+
+#editor:focus {
+  background: white;
+  box-shadow: inset 0 0 0 1px var(--primary-color);
+}
