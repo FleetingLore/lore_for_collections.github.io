@@ -1,0 +1,24 @@
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--toolbar-height);
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+  padding: 0 var(--spacing-lg);
+  background: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-light);
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+/* 保存区域 */
+.save-box {
+  margin-left: auto;
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
