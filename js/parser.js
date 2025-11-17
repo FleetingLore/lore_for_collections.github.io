@@ -164,7 +164,7 @@ export function nodeToHTML(node, level = 0) {
 
     if (node.type === 'Domain') {
         const isOpen = level === 0 ? ' open' : '';
-        html += `${indent}      <details${isOpen}>\n`;
+        html += `${indent}  <details${isOpen}>\n`;
 
         let title;
         if (node.category.type === 'Category1') {
@@ -175,21 +175,21 @@ export function nodeToHTML(node, level = 0) {
             title = 'None';
         }
 
-        html += `${indent}        <summary>${title}</summary>\n`;
+        html += `${indent}    <summary>${title}</summary>\n`;
 
         if (node.rails && node.rails.length > 0) {
-            html += `${indent}        <div style="margin-left:20px">\n`;
+            html += `${indent}    <div style="margin-left:20px">\n`;
             node.rails.forEach(child => {
                 html += nodeToHTML(child, level + 1);
             });
-            html += `${indent}        </div>\n`;
+            html += `${indent}    </div>\n`;
         }
 
-        html += `${indent}      </details>\n`;
+        html += `${indent}  </details>\n`;
     } else if (node.type === 'Rail') {
-        html += `${indent}      <a href="${node.content}" target="_blank">${node.name}</a>\n`;
+        html += `${indent}  <a href="${node.content}" target="_blank">${node.name}</a>\n`;
     } else if (node.type === 'Element') {
-        html += `${indent}      <p>${node.content}</p>\n`;
+        html += `${indent}  <p>${node.content}</p>\n`;
     }
 
     return html;
