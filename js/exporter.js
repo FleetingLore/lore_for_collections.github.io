@@ -17,7 +17,7 @@ function exportHTML() {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${document.getElementById('filename').value || 'local'}</title>
-  <link rel="stylesheet" href="https://fleetinglore.github.io/collections.css">
+  <link rel="stylesheet" href="https://fleetinglore.github.io/collection/collection.css">
 </head>
 <body>
   <details open>
