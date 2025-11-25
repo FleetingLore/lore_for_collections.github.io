@@ -1,3 +1,5 @@
+https://fleetinglore.github.io/lore_for_collections/
+
 # lore_for_collections | 语法手册
 
 | 2025年11月15日
@@ -15,3 +17,4 @@ bilibili = https://www.bilibili.com
   bilibili = https://www.bilibili.com
   zhihu = https://www.zhihu.com
 ```
+
